@@ -22,8 +22,8 @@ Acrescente a linha abaixo no bloco scripts do pakage.json:
 ```
 "scripts": {
     ...
-    "html": "set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter",
-    "html2": "set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter login; google-chrome ./test-report/index.html"
+    "html": "set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter; google-chrome ./test-report/index.html",
+    "html2": "set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter "
     ...
   },
 ```
